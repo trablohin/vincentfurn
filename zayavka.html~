@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>vincent furniture</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="underheader">
+<h2><i>VF</i></h2>
+<ul id="menu">
+<li><a href="index.html">Главная</a></li>
+<li><a href="index.html">Онлайн заявка</a></li>
+<li><a href="index.html">О компании</a></li>
+<li><a href="index.html">Контакты</a></li>
+<li><a href="index.html">Наши работы</a></li>
+</ul>
+</div>
+<div id="wrapper" style="margin-top:-15px"> 
+<p align="center" style="padding-top:15px; line-height: 20px; margin-left:50px; margin-right:50px">Если вы определились с выбором, вы можете сделать заказ прямо сейчас, заполнив заявку. Также, вы можете связаться с нами по одному из контактных телефонов и узнать подробную информацию. После заказа мы свяжемся с вами.</p>
+
+<div id="block">
+<form>
+<p>Користувач  <input type="text" size="25" class="a"></p>
+<p>Пароль      <input type="password" size="25" class="b"></p>
+<p>Ще раз      <input style="margin-left:36px" type="password" size="25" class="с"></p>
+<p>Повне ім'я  <input type="text" size="25" class="d"></p>
+<p>E-mail      <input type="text" size="25" class="e"></p>
+
+<p><input type="reset" value="Відмінити" style="margin-left:30px; margin-top:20px"><input type="submit" value="Зареєструватися" class="f"></p> 
+
+
+
+
+</form>
+<div id="registr">
+<p> Реєстрація</p>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>vincent furniture</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<script type="text/javascript">
+var image_count = 5;
+var interval = 9000;
+var time_out = 10;
+var i = 0;
+var timeout;
+var opacity = 100;
+
+function change_image() {
+ opacity--;
+ var j = i + 1;
+ var current_image = 'img_' + i;
+ if (i == image_count) j = 1;
+ var next_image = 'img_' + j;
+ document.getElementById(current_image).style.opacity=opacity/100;
+ document.getElementById(current_image).style.filter='alpha(opacity='+opacity+')';
+ document.getElementById(next_image).style.opacity=(100-opacity)/100;
+ document.getElementById(next_image).style.filter='alpha(opacity='+(100-opacity)+')';
+ timeout = setTimeout("change_image()", time_out);
+ if (opacity==1) {
+  opacity = 100;
+  clearTimeout(timeout);
+ }
+}
+
+setInterval (function() {i++; if (i>image_count) i=1; change_image();}, interval);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div id="underheader">
+<h2><i>VF</i></h2>
+<ul id="menu">
+<li><a href="index.html">Главная</a></li>
+<li><a href="zayavka.html">Онлайн заявка</a></li>
+<li><a href="index.html">О компании</a></li>
+<li><a href="index.html">Контакты</a></li>
+<li><a href="index.html">Наши работы</a></li>
+</ul>
+</div>
+<div id="wrapper">
+<img src='image/8.jpg' id="img_1" style="position: absolute; margin:8px 8px; width:1012px">
+<img src='image/9.jpg' id="img_2" style="opacity: 0; filter: alpha(opacity=0);
+    position: absolute; margin:8px 8px; width:1012px">
+<img src='image/10.jpg' id="img_3" style="opacity: 0; filter: alpha(opacity=0);
+    position: absolute; margin:8px 8px; width:1012px">
+<img src='image/11.jpg' id="img_4" style="opacity: 0; filter: alpha(opacity=0);
+    position: absolute; margin:8px 8px; width:1012px">
+<img src='image/12.jpg' id="img_5" style="opacity: 0; filter: alpha(opacity=0);
+    position: absolute; margin:8px 8px; width:1012px">
+<img src="image/5.jpg" style="margin-top:600px; margin-left:8px;  width:332px; height:230px;">
+<img src="image/6.jpg" style="margin-top:600px; margin-left:2px;  width:335px; height:230px;">
+<img src="image/4.jpg" style="margin-top:600px; margin-left:2px;  width:333px; height:230px;">
+<div id="menu2">
+<ul id="m2">
+<li><a href="index.html">Кухни</a></li>
+<li><a href="index.html">Спальни</a></li>
+<li><a href="index.html">Гостинные</a></li>
+<li><a href="index.html">Офисы</a></li>
+</ul>
+</div>
+<hr style="color:#ececec; width:800px; text-align:center"></hr>
+<img src='image/13.png' style=" margin:8px 8px; width:1012px">
+<div id="black">
+<h1 style="text-align:center; color:white; text-decoration:none; margin-top:15px; font-family:URW Chancery L; font-size: 35px; padding:30px;">VF</h1>
+<h1 style="text-align:center; color:white; text-decoration:none; margin-top:-45px; font-family:URW Chancery L; font-size: 35px; padding-top:-10px;">Vincent Furniture</h1>
+<p style="color:grey; margin-left:30px; margin-right:30px; text-align:center;">Vincent Furniture предоставляет вам все необходимое для того, чтобы самовыразиться и выбрать декор в вашем доме. Не важно к какому стилю вы склоняетесь:минимализму, классике или экзотике - Vincent Furniture совмещает ваши идеи с качественной мебелью и удачно подобранными аксессуарами, обеспечивая утонченный дизайн.   </p>
+<img src="image/13.jpg" style="height:250px; width:250px; margin-left: 80px; margin-top:20px;">
+<img src="image/14.jpg" style="height:250px; width:250px; margin-left: 50px; margin-top:20px;">
+<img src="image/15.jpg" style="height:250px; width:250px; margin-left: 50px; margin-top:20px;">
+</div>
+<div id="footer">
+<ul id="icons">
+<li><a href="https://vk.com/id76139745"><img src="image/vk.png" style="margin-left:320px;"></li>
+<li><a href="https://vk.com/id76139745"><img src="image/skype.png"></li>
+<li><a href="https://vk.com/id76139745"><img src="image/instagram.png"></li>
+<li><a href="https://vk.com/id76139745"><img src="image/twitter.png"></li>
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
